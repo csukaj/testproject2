@@ -8,6 +8,7 @@ import {useTheme} from '@mui/material/styles';
 import SCarouselImages from "./SCarouselImages";
 import Stack from "@mui/material/Stack";
 import STooltip from "./STooltip";
+import { useNavigate } from 'react-router-dom';
 
 export default function SCard(
   props: {
@@ -22,6 +23,11 @@ export default function SCard(
   }
 ) {
     const theme = useTheme();
+    const navigate = useNavigate();
+
+    const handleDetailsClick = () => {
+        navigate(`/accommodation/${props.id}`);
+    };
 
     return (
       <Card sx={{width: "100%", position: "relative", backgroundColor: props.background}} elevation={props.elevation}>
@@ -79,8 +85,8 @@ export default function SCard(
                       />
                   </Box>
                   <Box>
-                      <Button size="small" color="primary">Részletek</Button>
-                      <Button variant="contained" size="small">Részletek</Button>
+                      <Button size="small" color="primary" onClick={handleDetailsClick}>Részletek</Button>
+                      <Button variant="contained" size="small" onClick={handleDetailsClick}>Részletek</Button>
                   </Box>
               </Stack>
           </CardContent>

@@ -4,6 +4,7 @@ import BlogPostPage from "./pages/BlogPost";
 import ComponentsPage from "./pages/ComponentsPage";
 import LayoutPage from "./pages/LayoutPage";
 import LayoutExamplePage from "./pages/LayoutExamplePage";
+import AccommodationDetailPage from "./pages/AccommodationDetailPage";
 import * as React from "react";
 import BeautifulPage from "./pages/BeautifulPage";
 
@@ -35,6 +36,10 @@ const routes = [
   {
     path: "/layoutExample",
     element: <LayoutExamplePage />
+  },
+  {
+    path: "/accommodation/:id",
+    element: <AccommodationDetailPage />
   },
   {
     path: "/beautifulPage",
