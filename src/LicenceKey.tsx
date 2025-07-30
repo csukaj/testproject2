@@ -1,0 +1,3 @@
+const licenceKey = "10f2b9abdcc96114fea16f3cf3123f84Tz03MzgwNSxFPTE3MjUxMTU0OTYwMDAsUz1wcm8sTE09c3Vic2NyaXB0aW9uLEtWPTI="
+
+export default licenceKey

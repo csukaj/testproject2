@@ -1,0 +1,58 @@
+{
+  "name": "material-cra-tailwind-ts",
+  "version": "5.0.0",
+  "private": true,
+  "dependencies": {
+    "@emotion/react": "latest",
+    "@emotion/styled": "latest",
+    "@googlemaps/react-wrapper": "^1.1.35",
+    "@mui/icons-material": "latest",
+    "@mui/lab": "^5.0.0-alpha.138",
+    "@mui/material": "latest",
+    "@mui/x-date-pickers-pro": "^6.12.0",
+    "@testing-library/jest-dom": "latest",
+    "@testing-library/react": "latest",
+    "@testing-library/user-event": "latest",
+    "@types/jest": "latest",
+    "@types/node": "latest",
+    "@types/react": "latest",
+    "@types/react-dom": "latest",
+    "autoprefixer": "latest",
+    "autosuggest-highlight": "^3.3.4",
+    "axios": "latest",
+    "dayjs": "^1.11.9",
+    "postcss": "latest",
+    "react": "latest",
+    "react-dom": "latest",
+    "react-material-ui-carousel": "^3.4.2",
+    "react-router-dom": "latest",
+    "react-scripts": "latest",
+    "swiper": "^10.2.0",
+    "swiper-src": "github:nolimits4web/swiper",
+    "tailwindcss": "latest",
+    "typescript": "latest",
+    "web-vitals": "latest"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build && node htaccess.js",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@types/google.maps": "^3.53.6",
+    "ncp": "^2.0.0"
+  }
+}

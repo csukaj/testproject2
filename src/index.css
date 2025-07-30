@@ -1,0 +1,173 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Min width */
+
+body {
+    min-width: 360px;
+}
+
+/* Hide number input field arrows: https://www.w3schools.com/howto/howto_css_hide_arrow_number.asp */
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+/* HTML map marker: https://developers.google.com/maps/documentation/javascript/examples/advanced-markers-html-simple#maps_advanced_markers_html_simple-css */
+
+.s-map-marker {
+    font-family: var(--marker-font-family);
+    background-color: var(--marker-color);
+    border-radius: var(--marker-border-radius);
+    color: var(--marker-text-color);
+    font-size: var(--marker-font-size);
+    box-shadow: var(--marker-shadow);
+    padding: 8px;
+    position: relative;
+    line-height: 1;
+}
+.s-map-marker:hover {
+    box-shadow: var(--marker-shadow-hover);
+}
+
+.s-map-marker::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 100%;
+    transform: translate(-50%, 0);
+    width: 0;
+    height: 0;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-top: 8px solid var(--marker-color);
+}
+
+.s-map-marker-active {
+    z-index: 1;
+    color: white;
+}
+.s-map-marker-hidden {
+    display: none;
+}
+
+[class$=api-load-alpha-banner] {
+    display: none;
+}
+
+.gmnoprint.gm-bundled-control > .gmnoprint > div {
+    border-radius: 100px !important;
+    height: 88px !important;
+    padding-top: 5px !important;
+}
+
+/* Swiper: https://swiperjs.com/ */
+
+@import "https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css";
+
+.swiper {
+    --swiper-navigation-color: rgba(0, 0, 0, 0.54);
+    --swiper-navigation-size: 16px;
+    --swiper-navigation-sides-offset: 16px;
+    width: 100%;
+    height: 100%;
+}
+
+.swiper:hover > .swiper-button-prev,
+.swiper:hover > .swiper-button-next {
+    background: white;
+    border-radius: 50%;
+    aspect-ratio: 1/1;
+    width: auto;
+    height: calc(var(--swiper-navigation-size) + 16px);
+}
+.swiper:hover > .swiper-button-prev {
+    transform: translate(-12px, -8px);
+}
+.swiper:hover > .swiper-button-next {
+    transform: translate(12px, -8px);
+}
+
+.swiper-slide {
+    text-align: center;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-slide {
+    width: auto;
+}
+
+.swiper-slide:not(:last-child) {
+    margin-right: 8px;
+}
+
+.swiper-slide:first-child img {
+    border-top-left-radius: 8px;
+}
+
+.swiper-slide:last-child img {
+    border-top-right-radius: 8px;
+}
+
+.swiper-slide img {
+    height: 148px;
+    width: auto;
+}
+
+@media (min-width: 1200px) {
+    .swiper-slide img {
+        height: 152px;
+    }
+}
+
+@media (min-width: 1600px) {
+    .swiper-slide img {
+        height: 156px;
+    }
+}
+
+/* Date Range Calendar */
+
+/*@media (max-width: 799px)*/
+/*{*/
+/*    .MuiDateRangeCalendar-root {*/
+/*        flex-direction: column;*/
+/*    }*/
+/*    .MuiDateRangeCalendar-monthContainer:not(:last-of-type) {*/
+/*        border-right: none;*/
+/*    }*/
+
+/*    .MuiDateRangeCalendar-root > .MuiDateRangeCalendar-monthContainer:nth-child(2) > .MuiPickersArrowSwitcher-root > .MuiIconButton-edgeStart.MuiPickersArrowSwitcher-button:last-child {*/
+/*        position: absolute;*/
+/*        top: 80px;*/
+/*        right: 16px;*/
+/*    }*/
+/*    .MuiDateRangeCalendar-root > .MuiDateRangeCalendar-monthContainer:nth-child(2) > .MuiPickersArrowSwitcher-root > .MuiTypography-subtitle1 {*/
+/*        width: 100%;*/
+/*        text-align: center;*/
+/*        margin-right: 24px;*/
+/*    }*/
+/*}*/
+
+.s-date-range-picker-input .MuiOutlinedInput-root:not(.Mui-focused) fieldset.MuiOutlinedInput-notchedOutline {
+    border: none;
+}
+
+.MuiInputBase-root {
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+}
+
+[hidden] {
+    display: none;
+}
