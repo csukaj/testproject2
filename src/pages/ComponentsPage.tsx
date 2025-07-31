@@ -44,8 +44,10 @@ import SSwiper from "../components/SSwiper";
 import STypography from "../components/STypography";
 import Button from "@mui/material/Button";
 import SInfiniteScrollDatePickerDemo from "../components/SInfiniteScrollDatePickerDemo";
+import SInfiniteScrollDateRangePickerDemo from "../components/SInfiniteScrollDateRangePickerDemo";
 
 const sComponents = [
+    {url: '#', title: 'Infinite Scroll Date Range Picker', components: [<SInfiniteScrollDateRangePickerDemo/>]},
     {url: '#', title: 'Infinite Scroll Date Picker', components: [<SInfiniteScrollDatePickerDemo/>]},
     {url: '#', title: 'Swiper', components: [<SSwiper/>]},
     {url: '#', title: 'Colors', components: [<SColors/>]},
